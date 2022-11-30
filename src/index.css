@@ -1,0 +1,7 @@
+@import url("./styles/fonts.css");
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply no-underline;
+}
