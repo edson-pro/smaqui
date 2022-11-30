@@ -62,8 +62,8 @@ export default function Faq() {
   return (
     <section aria-labelledby="faq-heading" className="bg-white">
       <div className="mx-auto  py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="flex w-full  justify-between items-center ">
-          <div className="max-w-2xl ">
+        <div className="flex w-full items-start flex-col md:flex-row   justify-between md:items-center ">
+          <div className="max-w-2xl mb-3 md:mb-0 ">
             <h2
               id="faq-heading"
               className="text-2xl font-extrabold tracking-tight text-gray-900"
