@@ -97,7 +97,7 @@ export default function Contact() {
   ));
 
   return (
-    <div className="lg:px-8 px-3 max-w-7xl mx-auto my-10">
+    <div id="contact" className="lg:px-8 px-3 max-w-7xl mx-auto my-10">
       <div className={classes.wrapper}>
         <SimpleGrid
           cols={2}

@@ -41,9 +41,10 @@ interface CardProps {
   image: string;
   title: string;
   category: string;
+  id: number;
 }
 
-function Card({ image, title, category }: CardProps) {
+function Card({ image, title, category, id }: CardProps) {
   const { classes } = useStyles();
 
   return (
@@ -62,77 +63,57 @@ function Card({ image, title, category }: CardProps) {
           {title}
         </Title>
       </div>
-      <Link to={`/articles/1`}>
+      <Link to={`/articles/${id}#`}>
         <Button variant="white" color="dark">
-          Read article
+          Soma Inkuru
         </Button>
       </Link>
     </Paper>
   );
 }
 
-const data = [
+export const articles = [
   {
+    id: 1,
     image:
-      "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Best forests to visit in North America",
-    category: "nature",
+      "https://media.cnn.com/api/v1/images/stellar/prod/221111074548-pregnancy-test-stock.jpg?c=16x9&q=w_800,c_fill",
+    title: "Ni ryari wakora Pregnancy Test",
+    category: "Ubuzima",
   },
   {
+    id: 2,
     image:
-      "https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Hawaii beaches review: better than you think",
-    category: "beach",
+      "https://video-images.vice.com/articles/58e41f76feca7b07aecf1407/lede/1491834723255-GettyImages-137358265.jpeg?crop=1xw:0.52886345053148xh;center,center",
+    title: "Testosterone nke mu mubiri",
+    category: "Ubuzima",
   },
   {
+    id: 3,
     image:
-      "https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Mountains at night: 12 best locations to enjoy the view",
-    category: "nature",
+      "https://www.gannett-cdn.com/presto/2022/05/12/USAT/b587914f-8ab1-4a71-894d-f4abd7f885c8-GettyImages-1320497977.jpg?width=980&height=654&fit=crop&format=pjpg&auto=webp",
+    title: "Gutoza Umwana umuco wo kwifata",
+    category: "UBUZIMA",
   },
   {
+    id: 4,
     image:
-      "https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Aurora in Norway: when to visit for best experience",
-    category: "nature",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Best places to visit this winter",
-    category: "tourism",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Active volcanos reviews: travel at your own risk",
-    category: "nature",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Best places to visit this winter",
-    category: "tourism",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-    title: "Active volcanos reviews: travel at your own risk",
-    category: "nature",
+      "https://assets3.cbsnewsstatic.com/hub/i/r/2010/09/22/86b3c5fb-a643-11e2-a3f0-029118418759/thumbnail/640x480/6bdb6a9a0b00d7c0c238184fb451abdc/sperm_1.jpg",
+    title: "Ibishobora kwica intanga-ngabo",
+    category: "UBUZIMA",
   },
 ];
 
 export default function Articles() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
-  const slides = data.map((item) => (
+  const slides = articles.map((item) => (
     <Carousel.Slide key={item.title}>
       <Card {...item} />
     </Carousel.Slide>
   ));
 
   return (
-    <div className="my-20">
+    <div id="articles" className="my-20">
       <div className="text-center my-8">
         <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
           Ibikuzwe kugarukwaho

@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import ArticleDetails from "./pages/articles/ArticleDetails";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import Page404 from "./pages/Page404";
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
       {
         path: "/articles",

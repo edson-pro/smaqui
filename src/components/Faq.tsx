@@ -4,63 +4,63 @@ import { Button } from "@mantine/core";
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Ese amasohoro avura ibiheri?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "oya, ibiheri biterwa n'ibintu byinshi harimo icyo twakita za allergy(imyivumbagatanyo y'umubiri),uburwayi runaka, ibiheri bivurwa nkizindi ndwara zisanzwe",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Kuboneza urubyaro ni iki?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "kuboneza urubyaro biba mugihe ababana bemeranyijwe kubyara abana bafite ubushobozi bwokurera, bikagendana kandi n'ikerekezo k'igihugu. ningombwa kuboneza urubyaro kuko bigabanya ubwiyongere bukabije mugihugu ariko kandi bikadufasha kuvamubukene.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "virusi itera SIDA yandura gute ?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Virusi itera SIDA ishobora kwandurira mumatemba buzi aturuka ku muntu wanduye virusi itera SIDA. Aya matembabuzi ni amaraso, amasohoro na amashereka",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Ese birashoboka gusama ukoze imibonano mpuzabitsina bwa mbere",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "ego birashoboka ! niba warakoze imibonano mpuzabitsina mugihe cyuburumbuke birashoboka ko uzasama nubwo ari ubwambere",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Ese namenya gute ko nasamye ?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      ".Kutabona imihango  mu gihe usanzwe uyiboneramo: Hari impamvu nyinshi zishobora gutuma utabona imihango mu gihe wateganyaga. Zi...",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Ese kubura imihango biravurwa?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Byaba kubura imihango by’ibanze, cyangwa warayigeze bishobora kuvurwa bitewe n’icyabiteye, kandi nanone bitewe n’uko ufite icyo kibazo yifuza kubyara cyangwa atabyifuza. ",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "uko wirinda umunuko mu gitsina",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Bijya bibaho ko umugore agira impumuro itari nziza ituruka mu gitsina cye,kuburyo uwo yegereye wese ahita yumva ko hari umwuka udasanzwe umuturukaho kandi we ugasanga atabyitaho cyangwa",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Igihe uherukira mu mihango bivuze iki?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Iyo kwa mu Muganga (Ndetse n’ahandi aho ariho hose) bakubajije igihe uherukira mu mihango, uba ugomba kubasubiza umunsi wa mbere w’imihango iheruka. Apana umunsi wayiviriyemo.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: " Ukwezi guhindagurika cyangwa se kudahindagurika?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Iyo iminsi ubonye muri ayo mezi atatu itandukanye cyane, urugero nka 23, 30, 35, gutyo gutyo, uba ufite ukwezi guhindagurika. Icyo gihe kumenya iminsi yawe y’uburumbuke.",
   },
 ];
 
 export default function Faq() {
   return (
-    <section aria-labelledby="faq-heading" className="bg-white">
+    <section id="faq" aria-labelledby="faq-heading" className="bg-white">
       <div className="mx-auto  py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex w-full items-start flex-col md:flex-row   justify-between md:items-center ">
           <div className="max-w-2xl mb-3 md:mb-0 ">

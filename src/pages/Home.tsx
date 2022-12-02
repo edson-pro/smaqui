@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Articles from "../components/Articles";
+import AskDoctor from "../components/AskDoctor";
 import Faq from "../components/Faq";
 import Hero from "../components/Hero";
 import Pattners from "../components/Pattners";
@@ -12,7 +13,8 @@ export default function Home() {
       <Hero />
       <Pattners />
       <Faq />
-      <Stats />
+      {/* <AskDoctor /> */}
+      {/* <Stats /> */}
       <Articles />
       <Contact />
     </Fragment>

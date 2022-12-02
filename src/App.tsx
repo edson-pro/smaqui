@@ -1,7 +1,7 @@
 import router from "./router";
-import { BrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout";
+import { BrowserRouter, RouterProvider, useLocation } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
+import { useEffect } from "react";
 
 export default function App() {
   return (

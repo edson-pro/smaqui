@@ -10,10 +10,10 @@ export default function Hero() {
           <div className="absolute inset-0">
             <img
               className="h-full w-full object-cover"
-              src="https://www.imbutofoundation.org/iaccelerator/assets/img/ximbuto6.jpg.pagespeed.ic.g-YmplNfK0.webp"
+              src="/bg1.jpg"
               alt="People working on laptops"
             />
-            <div className="absolute inset-0 bg-green-300 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-black bg-opacity-50 mix-blend-multiply" />
           </div>
           <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-7xl">
@@ -24,9 +24,9 @@ export default function Hero() {
                 umubyeyi - abana n'ngimbi
               </span>
             </h1>
-            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-green-100 sm:max-w-3xl">
-              Uburyo bushya bugamije kugabanya ipfunwe ryubuzima bwo mu mutwe no
-              kuzamura amakuru na serivisi.
+            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-green-50 sm:max-w-3xl">
+              Uburyo bushya bugamije kuzamura ibiganiro hagati y'abana na
+              ababyeyi kubuzima bw' imyororokere ndetse n' inzobere.
             </p>
             <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:grid sm:grid-cols-2 sm:gap-5">

@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   const Links = [
     { link: "/", title: "Ahabanza" },
-    { link: "/#", title: "Ibibazo" },
-    { link: "/#", title: "Abo Turibo" },
-    { link: "/contact", title: "Twandikire" },
+    { link: "#faq", title: "Ibibazo" },
+    { link: "#", title: "Abo Turibo" },
+    { link: "#contact", title: "Twandikire" },
   ];
   return (
     <header>
@@ -41,10 +41,14 @@ export default function NavBar() {
             ))}
           </div>
           <div className="hidden md:flex gap-5 items-center justify-end md:flex-1 lg:w-0">
-            <Button size="md" variant="subtle">
-              Kwinjira
-            </Button>
-            <Button size="md">Tangira</Button>
+            <Link to={"/login"}>
+              <Button size="md" variant="subtle">
+                Kwinjira
+              </Button>
+            </Link>
+            <Link to={"/login"}>
+              <Button size="md">Tangira</Button>
+            </Link>
           </div>
         </div>
 
